@@ -102,10 +102,11 @@ createTodoItem(label) {
         }
         return items.filter((item) => {
             return item.label
-            .toLowerCase()
-            .indexof(term.toLowerCase()) > -1;
+                .toLowerCase()
+                .indexOf(term.toLowerCase()) > -1;
         });
     }
+    
 
     filter(items, filter) {
         switch (filter) {
